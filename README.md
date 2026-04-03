@@ -70,9 +70,10 @@ Replace `/path/to/` with the actual clone path. The script only acts on files wh
 ### Step 4: Test manually
 
 ```bash
-echo "Test learning entry" > /tmp/test-learnings/test.md
+mkdir -p /tmp/.learnings
+echo "Test learning entry" > /tmp/.learnings/test.md
 ZAP1_API_KEY=your_key ZAP1_AGENT_ID=test-agent \
-  ./scripts/attest-learning.sh /tmp/test-learnings/test.md
+  ./scripts/attest-learning.sh /tmp/.learnings/test.md
 ```
 
 Expected output:
