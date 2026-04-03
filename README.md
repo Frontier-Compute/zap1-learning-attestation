@@ -2,7 +2,7 @@
 
 Verifiable continuous improvement.
 
-Pairs with [self-improving-agent](https://github.com/pskoett/self-improving-agent) (343K downloads). Every learning, correction, and feature request the agent records gets a cryptographic proof anchored to Zcash mainnet via [ZAP1](https://pay.frontiercompute.io).
+Every learning, correction, and feature request an agent records gets a cryptographic proof anchored to Zcash mainnet via [ZAP1](https://pay.frontiercompute.io).
 
 When the agent learns something, you can prove when it happened - down to the Zcash block.
 
@@ -20,7 +20,7 @@ From that point, `GET /verify/{leaf_hash}` returns a Merkle proof showing your l
 
 ### Prerequisites
 
-- [self-improving-agent](https://github.com/pskoett/self-improving-agent) installed and running
+- A self-improving agent (or any tool that writes to `.learnings/`)
 - `curl` and `sha256sum` on PATH
 - A ZAP1 API key from [pay.frontiercompute.io](https://pay.frontiercompute.io)
 
